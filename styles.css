@@ -4,8 +4,8 @@ body {
 
 .hero {
     background-color: #b23a31;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
 }
 
 header {
@@ -16,7 +16,6 @@ header {
 header img {
     height: 54px;
     width: auto;
-    padding-top: 10px;
 }
 
 .top-links {
@@ -36,8 +35,8 @@ header img {
     font-size: 48px;
     font-weight: 900;
     color: #F9FAF8;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .info {
@@ -61,19 +60,30 @@ button {
     font-size: 20px;
     height: 40px;
     width: 150px;
-    margin-top: 15px;
+    margin-top: 5px;
     border-radius: 12px;
     margin-bottom: 20px;
 }
 
-.additonal-info {
-    
+.additional-info h2{
+    font-size: 36px;    
+    text-align: center;
 }
 
 .boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+}
+
+.text-space {
+    text-align: center;
 }
 
 .img-space {
