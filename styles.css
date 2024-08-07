@@ -53,6 +53,12 @@ header img {
     font-size: 18px;
 }
 
+.right img {
+    height: auto;
+    width: 50vw;
+    max-width: 630px;
+}
+
 button {
     background-color: #3882f6;
     color: #F9FAF8;
@@ -80,6 +86,7 @@ button {
     flex-direction: column;
     align-items: center;
     max-width: 500px;
+    padding-bottom: 15px;
 }
 
 .text-space {
@@ -93,6 +100,22 @@ button {
     border-radius: 12px;
  }
 
+ .quote {
+    padding: 40px;
+    background-color: #E5E7EB;
+ }
+
+.full-context {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 28px;
+}
+
+.speaker {
+    align-self: end;
+    font-weight: 900;
+}
 
 
 @media (max-width: 768px) {
