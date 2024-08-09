@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    height: 54px;
+    height: 150px;
     width: auto;
 }
 
@@ -27,8 +27,11 @@ header img {
 
 .top-links li {
     justify-content: space-between;
-    color: #E5E7EB;
     font-size: 18px;
+}
+
+a {
+    color: #E5E7EB;
 }
 
 .left h1 {
@@ -96,14 +99,24 @@ button {
 
 .text-space {
     text-align: center;
+    padding-top: 10px;
 }
 
 .img-space {
+    justify-content: center;
+    display: flex;
     height: 150px;
     width: 150px; 
     border: 4px solid #b23a31;
     border-radius: 12px;
- }
+    overflow: hidden; /* Hide overflow to crop the image */
+    position: relative;
+}
+
+.img-space img{
+    height: 150px;
+    width: auto;
+}
 
  .quote {
     padding: 40px;
@@ -121,26 +134,33 @@ button {
 .speaker {
     align-self: end;
     font-weight: 900;
+    padding-bottom: 20px;
 }
 
 footer {
     display: flex;
-    flex-direction: column;
     color: #E5E7EB;
     background-color: #b23a31;
-    display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
-footer p {
-    margin: 0px;
-}
-
 .socials {
     display: flex;
     align-items: center;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.socials img {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
 }
 
 
