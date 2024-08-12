@@ -8,12 +8,6 @@ body {
     padding-left: 20px;
 }
 
-.contact-us {
-    height: 100vh;
-}
-
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -169,11 +163,25 @@ footer {
     width: 24px;
     height: 24px;
 }
+/* .contact .center {
+    height: 90%;
+} */
 
 .contact-info {
     background-color: #E5E7EB;
     text-align: center;
     border-radius: 12px;
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+.contact-info img {
+    width: 80vw;
+    height: auto;
+    padding-bottom: 10px;
+    max-width: 600px; /* Optional: Add a max-width to prevent it from being too large on large screens */
 }
 
 .contact-info h1, .contact-info a {
@@ -182,14 +190,16 @@ footer {
     color: black;
 }
 
-.contact-info img {
-    width: 80vw;
-    height: auto;
-    padding-bottom: 10px;
-}
 
 .contact.hero {
     height: 90vh;
+    padding-bottom: 0px;
+}
+
+footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 10vh;
 }
 
 @media (max-width: 768px) {
