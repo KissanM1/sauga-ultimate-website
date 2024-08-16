@@ -8,6 +8,11 @@ body {
     padding-left: 20px;
 }
 
+.contact.hero, .schedule.hero, .events.hero {
+    min-height: 90vh;
+    padding-bottom: 0px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -164,7 +169,7 @@ footer {
     height: 24px;
 }
 
-.contact-info {
+.contact-info, .next-event {
     background-color: #E5E7EB;
     text-align: center;
     border-radius: 12px;
@@ -172,27 +177,26 @@ footer {
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
-    max-width: 950px;
+    max-width: 850px;
 }
 
-.contact-info img {
+.contact-info img, .next-event img {
     width: 80vw;
     height: auto;
     padding-bottom: 10px;
     max-width: 600px; /* Optional: Add a max-width to prevent it from being too large on large screens */
 }
 
-.contact-info h1, .contact-info a {
+.contact-info h1, .contact-info a, .next-event h1{
     font-size: 38px;
     padding: 10px;
     color: black;
 }
 
-
-.contact.hero, .schedule.hero, .events.hero {
-    min-height: 90vh;
-    padding-bottom: 0px;
+.next-event {
+    margin-bottom: 50px;
 }
+
 
 .calendar {
     display: flex;
