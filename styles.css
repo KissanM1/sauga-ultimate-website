@@ -2,20 +2,27 @@ body {
     margin: 0px;
 }
 
+body, html {
+    height: 100%;
+}
+
 .hero {
     background-color: #b23a31;
     padding: 20px;
     padding-left: 20px;
 }
 
-.contact.hero, .schedule.hero, .events.hero {
+.contact.hero, .schedule.hero {
     min-height: 90vh;
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;    
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 header img {
@@ -51,6 +58,8 @@ h1 {
     display: flex;  
     padding-left: 10px;
     padding-right: 10px;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 
 .left {
@@ -63,10 +72,13 @@ h1 {
     font-size: 18px;
 }
 
+
+
 .right img {
     height: auto;
     width: 50vw;
     max-width: 630px;
+    margin-left: 40px;
 }
 
 button {
@@ -177,14 +189,14 @@ footer {
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
-    max-width: 850px;
+    max-width: 750px;
 }
 
 .contact-info img, .next-event img {
     width: 80vw;
     height: auto;
-    padding-bottom: 10px;
-    max-width: 600px; /* Optional: Add a max-width to prevent it from being too large on large screens */
+    padding-bottom: 30px;
+    max-width: 450px; 
 }
 
 .contact-info h1, .contact-info a, .next-event h1{
@@ -197,39 +209,17 @@ footer {
     margin-bottom: 50px;
 }
 
-
-.calendar {
+.spacing {
     display: flex;
     flex-direction: column;
-    gap: 3px;
-}
-
-.week, .named_days {
-    display: flex;
-    gap: 3px;
-}
-
-.day, .named_day {
-    width: 120px;
-}
-
-.day {
-    height: 100px;
-    background-color: #E5E7EB;
-    border-radius: 3px;
-}
-
-.named_day {
-    display: flex;
-    justify-content: center;
-    color: #E5E7EB;
-    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
     padding-top: 0px;
     padding-bottom: 0px;
-    height: 10vh;
+    min-height: 10vh;
 }
 
 @media (max-width: 768px) {
